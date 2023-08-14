@@ -1,0 +1,36 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Merienda', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+#board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+    }
+        
+#board>div {
+    background-color: lightgray;
+    border: 5px solid black;
+    padding: 60px;
+    font-size: 30px;
+    text-align: center;
+ }
+
+ #board>div:hover {
+    color: white;
+    background-color: darkgrey;
+ }
